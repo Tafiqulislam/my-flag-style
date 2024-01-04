@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.flag-acontainer{
+    height: 250px;
+    width: 500px;
+    background-color: green;
+    position: relative;
+    left: 30%;
+    top: 30%;
+    transform: translate(-50%-50%);
+    animation-name: flag;
+    animation-duration: 7s;
+}
+
+@keyframes flag{
+    from{
+        height: 50px;
+        width: 100px;
+        background-color: green;
+}
+
+to{
+    height: 250px;
+    width: 500px;
+}
+}
+
+
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.flag-circle{
+    height: 130px;
+    width: 130px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:50%;
+    animation-name: circle;
+    animation-duration: 7s;
+}
+
+@keyframes circle{
+    from{
+        width: 50px;
+        height: 50px;
+    }
+
+    to{
+        height: 130px;
+        width: 130px;
+}
+}
+
+.flag-handle{
+    height: 300px;
+    width: 30px;
+    background-color: black;
+    position: relative;
+    top: 60%;
+    border-top-right-radius: 30px;
+}
+
+.flag-footer{
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
